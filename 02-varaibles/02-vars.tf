@@ -60,15 +60,15 @@ output "fruit_output" {
 }
 
 
-variable "country" {}
+variable "COUNTRY" {}
 
 output "country-output" {
-  value = var.country
+  value = var.COUNTRY
 }
 
 
-variable "season" {}
+variable "SEASON" {}
 
 output "season-output" {
-  value = var.season
+  value = var.SEASON
 }
