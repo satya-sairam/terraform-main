@@ -27,3 +27,11 @@ variable "boolean" {
 output "boolean-output" {
   value = var.boolean
 }
+
+variable "list" {
+  default = ["aws" ,900, true]
+}
+
+output "list-output" {
+  value = var.list
+}
