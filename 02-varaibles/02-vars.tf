@@ -50,3 +50,7 @@ output "map-var-output" {
 output "map-var-output2" {
   value = var.list-map-variable
 }
+
+
+
+variable "fruits" {}
