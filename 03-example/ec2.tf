@@ -24,8 +24,7 @@ resource "aws_security_group" "SG" {
     }
 
 
-  egress
-    {
+  egress {
       from_port            = 0
       to_port              = 0
       protocol             = "-1"
