@@ -54,3 +54,7 @@ output "map-var-output2" {
 
 
 variable "fruits" {}
+
+output "fruit_output" {
+  value = var.fruits
+}
