@@ -38,9 +38,9 @@ resource "aws_security_group" "SG" {
 }
 
 
-output "aws_attributes" {
+/*output "aws_attributes" {
   value = aws_instance.sample
-}
+}*/
 
 output "security_group_attributes" {
   value = aws_security_group.SG
