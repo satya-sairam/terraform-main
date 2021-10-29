@@ -44,7 +44,7 @@ variable "list-map-variable" {
 }
 
 output "map-var-output" {
-  value = var.list-map-variable[training]
+  value = var.list-map-variable.training
 }
 
 output "map-var-output2" {
