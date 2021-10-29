@@ -3,3 +3,6 @@ output "out1" {
 }
 
 
+output "out2" {
+  value = "my first output"
+}
