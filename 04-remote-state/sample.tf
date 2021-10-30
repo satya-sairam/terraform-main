@@ -1,8 +1,8 @@
-resource "aws_instance" "sample" {
+resource "aws_instance" "sample12" {
   ami                 = "ami-0e4e4b2f188e91845"
   instance_type       = "t2.micro"
   tags                = {
-    name              = "sample-1"
+    name              = "sample-12"
   }
 }
 
