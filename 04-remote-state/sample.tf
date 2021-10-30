@@ -11,6 +11,7 @@ terraform {
     bucket             = "terraform-my-first-bucket"
     key                = "sample/terraform.statefile"
     region             = "us-east-1"
+    dynamodb_table     = "terraform-dynamodb"
   }
 }
 
