@@ -9,3 +9,7 @@ resource "aws_instance" "demo" {
 
 
 variable Sec_grp{}
+
+output "privateip" {
+  value = aws_instance.demo.private_ip
+}
