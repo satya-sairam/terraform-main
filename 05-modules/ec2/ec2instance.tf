@@ -3,8 +3,9 @@ resource "aws_instance" "demo" {
   ami                      = "ami-0e4e4b2f188e91845"
   instance_type            = "t2.micro"
   vpc_security_group_ids   = [var.Sec_grp]
+
   tags                     = {
-    Name                   = "sample_ec2_demo1"
+    Name                   = "sample-${count.index}"
   }
 }
 
