@@ -10,21 +10,11 @@
 //}
 
 pipeline{
-    agent none
+    agent any
     stages{
-        stage("master node"){
-            agent{
-                label 'master'
-            }
+        stage('workstation'){
             steps{
-                echo "hello world"
-            }
-
-        }
-        stage("worstation node"){
-            agent{label 'workstation'}
-            steps{
-                echo "i am from workstation"
+                echo "hi i am from workstaion"
             }
         }
     }
