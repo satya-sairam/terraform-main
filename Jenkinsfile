@@ -17,5 +17,10 @@ pipeline{
                 echo "hi i am from workstaion"
             }
         }
+        stage('new'){
+            steps{
+                echo "hi"
+            }
+        }
     }
 }
