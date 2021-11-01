@@ -1,9 +1,30 @@
+//pipeline{
+//    agent any
+//    stages{
+//        stage("one"){
+//            steps{
+//                echo "this is first pipeline"
+//            }
+//        }
+//    }
+//}
+
 pipeline{
-    agent any
+    agent none
     stages{
-        stage("one"){
+        stage("master node"){
+            agent{
+                label 'master'
+            }
             steps{
-                echo "this is first pipeline"
+                echo "hello world"
+            }
+
+        }
+        stage("worstation node"){
+            agent{label 'workstation'}
+            steps{
+                echo "i am from workstation"
             }
         }
     }
