@@ -1,26 +1,60 @@
+////pipeline{
+////    agent any
+////    stages{
+////        stage("one"){
+////            steps{
+////                echo "this is first pipeline"
+////            }
+////        }
+////    }
+////}
+//
 //pipeline{
 //    agent any
 //    stages{
-//        stage("one"){
+//        stage('workstation'){
 //            steps{
-//                echo "this is first pipeline"
+//                echo "hi i am from workstaion"
+//            }
+//        }
+//        stage('new'){
+//            steps{
+//                echo "hi"
 //            }
 //        }
 //    }
 //}
 
+
+
 pipeline{
     agent any
     stages{
-        stage('workstation'){
+        stage('one'){
             steps{
-                echo "hi i am from workstaion"
-            }
-        }
-        stage('new'){
-            steps{
-                echo "hi"
+                sh '''cd 06-roboshop-components
+                      terraform init
+                      terraform apply -auto-approve'''
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
