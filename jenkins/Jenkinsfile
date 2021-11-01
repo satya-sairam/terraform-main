@@ -1,9 +1,10 @@
-                     \
 pipeline{
     agent any
     stages{
         stage("one"){
-            echo "hello"
+            steps{
+                echo "my first pipeline"
+            }
         }
     }
 }
